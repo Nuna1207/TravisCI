@@ -1,6 +1,4 @@
 import re
-
-
 # ***
 # \d = Any Digit [0-9]
 # \D = Any non Digit
@@ -10,7 +8,6 @@ import re
 # \S = non Backspace
 # ***
 def edit_info(file):
-    lst = []
     lines = file.readlines()
     print('Contain file: ')
     print('_________________________________________________________')
