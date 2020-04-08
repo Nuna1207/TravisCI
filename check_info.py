@@ -7,7 +7,7 @@ import re
 # \s = Backspace
 # \S = non Backspace
 # ***
-def edit_info(file):
+def check_info(file):
     lines = file.readlines()
     print('Contain file: ')
     print('_________________________________________________________')
@@ -33,6 +33,6 @@ def edit_info(file):
                 print(fio)
 
 file = open('info.txt', "r", encoding='utf-8')
-lines = edit_info(file)
+lines = check_info(file)
 print(lines)
 file.close()
