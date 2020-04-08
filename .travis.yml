@@ -1,3 +1,6 @@
 language: python
-  script:
-    - pytest
+python:
+  -3.8
+install:
+  - pip install re
+script: python check_info.py
