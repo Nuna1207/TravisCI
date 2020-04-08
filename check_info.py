@@ -16,15 +16,11 @@ def edit_info(file):
     print('_________________________________________________________')
     for line in lines:
         print(line)
-    count = 1
-    splitter = ' '
     print('__________________________________________________________')
     print("Check info: ")
     for line in lines:
-        str = ''
         sub_lines = line.split(r"|")
         for sub_line in sub_lines:
-            count += 1
             if re.match(r"[A-Z a-z]", sub_line):
                 email = re.sub(r"@@", "@", sub_line).replace(' ', '')
                 print(email)
@@ -38,7 +34,6 @@ def edit_info(file):
             elif re.match(r"[А-Я][а-я]+[А-Я]", sub_line):
                 fio = sub_line.replace("", " ")
                 print(fio)
-
 
 file = open('info.txt', "r", encoding='utf-8')
 lines = edit_info(file)
