@@ -2,6 +2,7 @@ language: python
 python:
   - "3.6"
   - "3.8"
+repo_token: 00z1zmuwKdhY47LGlWRicqxoJ90Ku9wb0
 install:
   - pip install -r requirements.txt
   - pip install unittest2
