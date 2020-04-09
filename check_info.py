@@ -1,4 +1,5 @@
 import re
+import unittest
 # ***
 # \d = Any Digit [0-9]
 # \D = Any non Digit
@@ -36,3 +37,11 @@ file = open('info.txt', "r", encoding='utf-8')
 lines = check_info(file)
 print(lines)
 file.close()
+
+class MylistTest(unittest.TestCase):
+
+    def test_normal(self):
+       print("test passed")
+
+if __name__=='__main__':
+    unittest.main()
