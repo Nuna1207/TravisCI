@@ -2,6 +2,12 @@ language: python
 python:
   - "3.6"
   - "3.8"
+addons:
+  sonarcloud:
+    organization: "Nuna"
+    token: f67fcdf9c16137ddc58be9ff2f8a92b92ea1cfc1
 install:
   - pip install unittest2
-script: python check_info.py
+script:
+  - python check_info.py
+  - sonar-scanner -X
