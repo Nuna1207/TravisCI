@@ -9,5 +9,4 @@ addons:
 install:
   - pip install unittest2
 script:
-  - python check_info.py
   - sonar-scanner -X
